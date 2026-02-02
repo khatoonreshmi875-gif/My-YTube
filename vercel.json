@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "fe/package.json",
+      "src": "frontend/cd app/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "fe/dist" }
+      "config": { "distDir": "frontend/cd app/dist" }
     },
     {
       "src": "src/index.js",
@@ -13,6 +13,6 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "src/index.js" },
-    { "src": "/(.*)", "dest": "fe/dist/$1" }
+    { "src": "/(.*)", "dest": "frontend/cd app/dist/$1" }
   ]
 }
