@@ -126,7 +126,6 @@ const CommentThread = () => {
         onChange={(e) => {
           setcontents(e.target.value);
           setcontentData(e.target.value);
-          contents={contents};
         }}
         onClick={() => {
           addcomment(videoId, { content: contents });
